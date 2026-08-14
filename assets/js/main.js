@@ -91,13 +91,41 @@
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' }
     );
 
     revealEls.forEach((el, index) => {
       el.style.transitionDelay = `${Math.min(index % 6, 5) * 60}ms`;
       revealObserver.observe(el);
     });
+
+    // Safety net: an instant/non-smooth scroll jump (a direct #fragment
+    // load, Home/End, scrollbar-thumb drag) can move past elements without
+    // firing the intermediate frames IntersectionObserver relies on. Reveal
+    // anything at or above the current scroll position too — not just what's
+    // presently on screen — so nothing stays stuck hidden above the fold.
+    let revealTicking = false;
+    function sweepRevealed() {
+      revealTicking = false;
+      const vh = window.innerHeight;
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach((el) => {
+        if (el.getBoundingClientRect().top < vh) {
+          el.classList.add('is-visible');
+          revealObserver.unobserve(el);
+        }
+      });
+    }
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!revealTicking) {
+          revealTicking = true;
+          requestAnimationFrame(sweepRevealed);
+        }
+      },
+      { passive: true }
+    );
+    sweepRevealed();
   }
 
   /* ---------------- Back to top ---------------- */
