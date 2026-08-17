@@ -6,7 +6,7 @@ export default function SiteFooter() {
   return (
     <footer className="border-t border-cream/15 px-6 py-6 sm:px-10">
       <div className="mx-auto flex max-w-5xl items-center justify-between font-hn text-xs text-cream/50">
-        <p>&copy; {new Date().getFullYear()} Suriya Prakash Ravikumar. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Suriya Prakash RaviKumar. All rights reserved.</p>
         <button
           type="button"
           onClick={scrollToTop}
