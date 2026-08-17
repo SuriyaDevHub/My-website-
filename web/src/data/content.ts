@@ -15,14 +15,14 @@ export const footerLeft = ['AI & ML Engineer', 'Agentic Systems Builder', 'Obses
 export const footerRight = { label: 'Currently at', value: 'HSBC — AI & ML' };
 
 export const stats = [
-  { value: '5+', label: 'Years in AI-driven banking & analytics' },
+  { value: '7+', label: 'Years in AI-driven banking & analytics' },
   { value: '35%', label: 'Investigation time reduced via workflow AI' },
   { value: 'HSBC', label: 'SME Manager — AI & ML' },
   { value: 'Ph.D.', label: 'Pursuing — AI research, Annamalai University' },
 ];
 
 export const about = [
-  `AI & Machine Learning professional with over 5 years of experience driving data-driven transformation within global investment banking and financial services. Specializing in AI, automation, analytics, and intelligent process optimization, Suriya combines deep business domain expertise with strong technical capabilities to deliver scalable, high-impact solutions.`,
+  `AI & Machine Learning professional with over 7 years of experience driving data-driven transformation within global investment banking and financial services. Specializing in AI, automation, analytics, and intelligent process optimization, Suriya combines deep business domain expertise with strong technical capabilities to deliver scalable, high-impact solutions.`,
   `Currently serving as an SME Manager – AI & ML, he leads the design and implementation of agentic AI solutions, intelligent automation platforms, predictive analytics models, and enterprise data products that enhance operational efficiency, risk management, and decision-making. His expertise spans Python, Machine Learning, Generative AI, FastAPI, React, Databricks, PySpark, Tableau, Power BI, and cloud-based data engineering solutions.`,
   `With a proven track record across investment banking, market operations, trade surveillance, and enterprise automation, Suriya is passionate about transforming complex business challenges into innovative AI-powered solutions. He is particularly focused on advancing the adoption of Agentic AI, Intelligent Automation, and AI-driven decision systems within the financial services industry.`,
   `Driven by continuous learning and innovation, Suriya is also pursuing research interests in Artificial Intelligence for Finance, Trade Surveillance, and next-generation autonomous enterprise systems.`,
