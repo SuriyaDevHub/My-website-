@@ -22,10 +22,10 @@ export const stats = [
 ];
 
 export const about = [
-  `AI & Machine Learning professional with over 7 years of experience driving data-driven transformation within global investment banking and financial services. Specializing in AI, automation, analytics, and intelligent process optimization, Suriya combines deep business domain expertise with strong technical capabilities to deliver scalable, high-impact solutions.`,
-  `Currently serving as an SME Manager – AI & ML, he leads the design and implementation of agentic AI solutions, intelligent automation platforms, predictive analytics models, and enterprise data products that enhance operational efficiency, risk management, and decision-making. His expertise spans Python, Machine Learning, Generative AI, FastAPI, React, Databricks, PySpark, Tableau, Power BI, and cloud-based data engineering solutions.`,
-  `With a proven track record across investment banking, market operations, trade surveillance, and enterprise automation, Suriya is passionate about transforming complex business challenges into innovative AI-powered solutions. He is particularly focused on advancing the adoption of Agentic AI, Intelligent Automation, and AI-driven decision systems within the financial services industry.`,
-  `Driven by continuous learning and innovation, Suriya is also pursuing research interests in Artificial Intelligence for Finance, Trade Surveillance, and next-generation autonomous enterprise systems.`,
+  `I'm an AI & Machine Learning professional with 7+ years of experience driving data-driven transformation across global investment banking and financial services. I specialize in AI, automation, analytics, and intelligent process optimization — blending deep business domain expertise with strong engineering chops to ship scalable, high-impact solutions, not just proofs of concept.`,
+  `Today, I serve as an SME Manager – AI & ML, where I lead the design and delivery of agentic AI solutions, intelligent automation platforms, predictive analytics models, and enterprise data products that sharpen operational efficiency, strengthen risk management, and speed up decision-making. My toolkit spans Python, Machine Learning, Generative AI, FastAPI, React, Databricks, PySpark, Tableau, and Power BI — backed by hands-on cloud data engineering and a track record of turning messy, ambiguous requirements into production-grade systems.`,
+  `Across investment banking, market operations, trade surveillance, and enterprise automation, I've built a track record of measurable impact — including redesigning exception-handling workflows that cut investigation time by 35%. I'm energized by turning complex business challenges into AI-powered solutions, and I'm especially focused on pushing the adoption of Agentic AI, Intelligent Automation, and AI-driven decision systems forward within financial services.`,
+  `I'm a builder at heart and a lifelong learner by habit — currently pursuing a Ph.D. alongside active research interests in Artificial Intelligence for Finance, Trade Surveillance, and next-generation autonomous enterprise systems. My goal: close the gap between cutting-edge AI research and the real, high-stakes systems that global banks run on every day.`,
 ];
 
 export const focusAreas = [
@@ -33,6 +33,8 @@ export const focusAreas = [
   'Predictive analytics & enterprise data products',
   'Intelligent automation platforms',
   'Risk management & trade surveillance',
+  'Cloud-native ML & data engineering (Databricks, PySpark)',
+  'Applied Generative AI for financial workflows',
 ];
 
 export const experience = [
