@@ -19,7 +19,7 @@ export default function Hero() {
       <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-5 py-5 sm:px-8">
         <a href="#top" className="flex items-center gap-2 text-base font-medium text-white">
           <Sparkles size={22} strokeWidth={1.5} />
-          <span>Suriya</span>
+          <span>Suriya Prakash Ravikumar</span>
         </a>
 
         <nav className="liquid-glass hidden items-center gap-1 rounded-xl px-2 py-2 md:flex">
