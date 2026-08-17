@@ -3,7 +3,7 @@ import { projects } from '../data/content';
 
 export default function Projects() {
   return (
-    <section className="border-t border-cream/15 px-6 py-24 sm:px-10 sm:py-32">
+    <section id="work" className="scroll-mt-24 border-t border-cream/15 px-6 py-24 sm:px-10 sm:py-32">
       <div className="mx-auto max-w-5xl">
         <Reveal as="p" className="font-hn text-xs uppercase tracking-[0.2em] text-cream/50">
           Selected work

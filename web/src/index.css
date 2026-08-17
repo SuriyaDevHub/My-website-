@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +13,52 @@ html {
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * @layer components places these rules in Tailwind's "components" layer,
+ * which is emitted before the "utilities" layer regardless of where this
+ * file places the rule textually. Without this, `.liquid-glass`'s own
+ * `position: relative` and a Tailwind `absolute` utility applied on the
+ * same element have equal specificity, and whichever rule is later in the
+ * compiled stylesheet wins - source order, not intent. That silently broke
+ * the mobile menu panel (`liquid-glass absolute inset-x-4 ...`): position
+ * fell back to relative, `inset-x-4` stopped constraining its width, and it
+ * overflowed the viewport. Layering fixes it so utilities always win.
+ */
+@layer components {
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .liquid-glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.15) 80%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
 }
 
 .reveal-item {

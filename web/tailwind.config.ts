@@ -8,9 +8,9 @@ export default {
         cream: '#efeee9',
       },
       fontFamily: {
-        hn: ['"Archivo"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-        sans: ['"Archivo"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-        serif: ['"Archivo"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        hn: ['"Geist"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
+        sans: ['"Geist"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
+        serif: ['"Geist"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
       },
       keyframes: {
         fadeIn: {
